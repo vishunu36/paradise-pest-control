@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  XML Sitemap for Paradise Pest Control Services
+  Replace https://paradisepestcontrol.in with your actual domain once live.
+  Update lastmod dates after major content changes.
+  Submit to Google Search Console at: https://search.google.com/search-console
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage (single-page application — all sections on one page) -->
+  <url>
+    <loc>https://paradisepestcontrol.in/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+</urlset>

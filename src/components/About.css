@@ -1,0 +1,84 @@
+/* About / Why Choose Us */
+.about__benefits {
+  margin-bottom: var(--space-2xl);
+}
+
+.about__benefit {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-xl);
+  background: var(--clr-white);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+  animation: fadeInUp 0.5s ease both;
+}
+
+.about__benefit:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--clr-primary);
+}
+
+.about__benefit-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--clr-text-primary);
+}
+
+.about__benefit-desc {
+  font-size: 0.92rem;
+  color: var(--clr-text-secondary);
+  line-height: 1.65;
+}
+
+/* ── CTA band ── */
+.about__cta-band {
+  background: linear-gradient(135deg, var(--clr-primary) 0%, var(--clr-secondary) 100%);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl) var(--space-2xl);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+  color: white;
+  box-shadow: 0 8px 40px rgba(26,124,62,0.25);
+}
+
+.about__cta-band-text h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.about__cta-band-text p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  max-width: 480px;
+}
+
+.about__cta-band-btns {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .about__cta-band {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about__cta-band-btns {
+    width: 100%;
+    flex-direction: column;
+  }
+  .about__cta-band-btns .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

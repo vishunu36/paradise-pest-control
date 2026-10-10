@@ -1,0 +1,111 @@
+/* Service Areas */
+.areas__grid {
+  margin-bottom: var(--space-2xl);
+}
+
+.area-card {
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.area-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.area-card__city {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--clr-text-primary);
+  line-height: 1.2;
+}
+
+.area-card__state {
+  font-size: 0.82rem;
+  color: var(--clr-text-muted);
+  font-weight: 500;
+}
+
+.area-card__desc {
+  font-size: 0.92rem;
+  color: var(--clr-text-secondary);
+  line-height: 1.65;
+}
+
+.area-card__highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: auto;
+}
+
+.area-card__highlight {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  color: var(--clr-text-secondary);
+}
+
+.area-card__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--clr-primary);
+  flex-shrink: 0;
+}
+
+/* ── Map note ── */
+.areas__map-note {
+  background: white;
+  border: 1.5px solid var(--clr-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  text-align: center;
+}
+
+.areas__map-note-content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--clr-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.areas__map-note-content > p {
+  font-size: 0.95rem;
+  color: var(--clr-text-secondary);
+  margin-bottom: var(--space-xl);
+}
+
+.areas__map-note-btns {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-md);
+}
+
+.areas__map-disclaimer {
+  font-size: 0.8rem;
+  color: var(--clr-text-muted);
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .areas__map-note-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .areas__map-note-btns .btn {
+    width: 100%;
+    justify-content: center;
+    max-width: 320px;
+  }
+}

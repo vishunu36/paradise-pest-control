@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap location — update domain once live
+# Sitemap: https://paradisepestcontrol.in/sitemap.xml
